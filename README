@@ -40,3 +40,8 @@ Now run this command:
 
 The test application is run with 1, 2 and 16 threads. In each case, the output
 should indicate that the test was successful.
+
+
+
+The exgen test case can also be compiled. However, there is no automatic testing
+of correctness.

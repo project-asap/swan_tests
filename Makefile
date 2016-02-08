@@ -5,8 +5,8 @@ SWANFLAGS=-fcilkplus -std=c++11
 
 all: test
 
-sparse_lu: sparse_lu.cc
-	$(CXX) $(SWANFLAGS) sparse_lu.cc -g -O2 -I$(SWANRTDIR)/include -L$(SWANRTDIR)/.libs -o sparse_lu
+%: %.cc
+	$(CXX) $(SWANFLAGS) $< -g -O2 -I$(SWANRTDIR)/include -L$(SWANRTDIR)/.libs -o $@
 
 .PHONY: test
 test: sparse_lu test.1 test.2 test.16
