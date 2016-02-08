@@ -19,6 +19,26 @@ Note that the Clang/LLVM distribution has its own copy of the Intel Cilk
 Plus Runtime. We have however used the external code base as it is more
 recent.
 
+Details for the compiler:
+# 1. Checkout swan_llvm
+% git clone git@github.com:hvdieren/swan_llvm.git
+# 2. Move to position to place clang
+% cd swan_llvm/tools
+# 3. Checkout swan_clang
+% git clone git@github.com:hvdieren/swan_clang.git
+# 4. Change to top-level directory
+% cd ..
+# From now on, follow standard LLVM+Clang procedure
+% less README.txt
+
+For the runtime:
+# 1. Checkout swan_runtime
+% git clone git@github.com:hvdieren/swan_runtime.git
+# 2. Change directory
+% cd swan_runtime
+% less README
+
+
 =========
 * TESTS *
 =========
