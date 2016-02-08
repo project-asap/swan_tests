@@ -1,0 +1,42 @@
+Swan Test Suite
+Swan - a Cilk extension with dataflow dependencies for task-parallel programs
+
+This file provides basic instructions to setup Swan and provides two test
+cases for functional correctness.
+
+=========
+* SETUP *
+=========
+The runtime should be obtained from github.com/hvdieren/swan_runtime
+This is an extension of the Intel Cilk Plus Runtime.
+Please follow the default setup instructions.
+
+The compiler should be obtained from github.com/hvdieren/swan_clang
+This is an extension of the Clang/LLVM compiler.
+Please follow the default setup instructions.
+
+Note that the Clang/LLVM distribution has its own copy of the Intel Cilk
+Plus Runtime. We have however used the external code base as it is more
+recent.
+
+=========
+* TESTS *
+=========
+Set paths and environments to point to the clang compiler and runtime libraries
+compiled above.
+
+If you have not ran 'make install' and specified to compile clang in
+/path/to/obj, you will find the compiler at:
+
+/path/to/obj/bin/clang++
+
+Similarly, the Cilk libraries can be found in:
+/path/to/intel-cilkplus-runtime/.libs
+and header files in:
+/path/to/intel-cilkplus-runtime/include
+
+Now run this command:
+% make -DCXX=/path/to/obj/bin/clang++ -DSWANRTDIR=/path/to/intel-cilkplus-runtime test
+
+The test application is run with 1, 2 and 16 threads. In each case, the output
+should indicate that the test was successful.
