@@ -29,7 +29,7 @@ Details for the compiler:
 # 4. Change to directory for compiler-rt
 % cd ../projects/compiler-rt
 # 5. Checkout compiler-rt (standard version)
-% git clone git@github.com:llvm-mirror/compiler-rt
+% git clone https://github.com/cilkplus/compiler-rt
 % git checkout b6967623458e90b89b4e8a5311c5c9e0758bcb6e
 # 6. Change to top-level directory
 % cd ..
@@ -38,7 +38,7 @@ Details for the compiler:
 
 For the runtime:
 # 1. Checkout swan_runtime
-% git clone https://github.com/cilkplus/compiler-rt
+% git clone https://github.com/hvdieren/swan_runtime
 # 2. Change directory
 % cd swan_runtime
 % less README
