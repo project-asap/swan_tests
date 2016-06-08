@@ -38,7 +38,7 @@ Details for the compiler:
 
 For the runtime:
 # 1. Checkout swan_runtime
-% git clone git@github.com:hvdieren/swan_runtime.git
+% git clone https://github.com/cilkplus/compiler-rt
 # 2. Change directory
 % cd swan_runtime
 % less README
